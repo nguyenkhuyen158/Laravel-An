@@ -1,0 +1,100 @@
+Source:
+	ID_Source
+	Source (uptodate)
+
+Topics
+	ID_topic
+	Tên chủ đề (tim mạch, thông thường, học thuật)
+	Source
+	ID_parent
+
+Titles
+	ID_title
+	Title
+	Title_v
+	ID_topic
+	URL
+	content
+
+Sentences_title
+	id_sentence_title
+	id_sentence
+	id_title
+
+Sentences
+	ID_sentence
+	Sentence
+	Sentence_v
+	frequency
+	id_title
+
+Word
+	ID_word_e
+	word_english
+	word_vietnamese
+	frequency
+	ID_sentence
+
+Word_vietnamese
+	ID_word_v
+	word_english
+	word_vietnamese
+	IPA
+	Audio
+	Prefix
+	Root 1
+	Root 2
+	Suffix
+	Examples
+	Dictionry
+	ID_word_e
+
+Root_word
+	ID_pra
+	root
+	Meanings
+	type
+	Origin
+	Examples
+	frequency
+
+
+Học
+	id_học
+	id_từ_full
+	id từ thống kê
+	thời gian học học
+	thời gian hiện lại
+	
+Bookmark_topic
+	ID_bookmark_topic
+	user_id
+	Topic
+	Topic_v
+	ID parent
+
+Bookmark_word
+	ID_Bookmark_word
+	user_id
+	ID word
+	word_en
+	word_vn
+	True
+	False
+	remember
+	ID_bookmark_topic
+
+
+
+
+
+
+
+
+	A11912624
+	an0221db_14h
+	vnpt@an0221db_ftth
+
+	admin
+	@Dmin123
+

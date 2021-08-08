@@ -1,0 +1,4 @@
+the		75
+symptoms		35
+be		31
+prognosis		9

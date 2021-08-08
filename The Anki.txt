@@ -1,0 +1,88 @@
+
+
+<div class='word_vi'>{{Word_Vi}}</div>
+
+{{type:Cloze_En}}
+
+
+<div class='Phonetic_symbol' id='phon''>{{Phonetic symbol}}</div>
+
+<div style='font-family: Arial; font-size: 20px;'>
+	<audio controls autoplay>
+        <source src="{{Audio}}" type="audio/mpeg">  
+    </audio>
+</div>
+
+<select name="speed" id="speed" onchange="setPlaySpeed()">
+    <option value="0.125">0.125</option>
+    <option value="0.25">0.25</option>
+    <option value="0.5">0.5</option>
+    <option value="1.0">1.0</option>
+    <option value="1.5">1.5</option>
+    <option value="2">2</option>
+</select>
+
+
+
+<div class='Cloze_En'>{{Cloze_En}}</div>
+
+<div class='Word_Vi'>{{Word_Vi}}</div>
+<hr id=answer>
+<div style='font-family: Arial; font-size: 20px;'>{{type:Cloze_En}}</div>
+
+
+<div style='audio'>
+    <audio controls autoplay>
+        <source src="{{Audio}}" type="audio/mpeg">  
+    </audio>
+</div>
+<div class='Phonetic_symbol'>{{Phonetic symbol}}</div>
+
+<div style='font-family: Arial; font-size: 20px;'>{{Definition}}</div>
+
+<div style='font-family: Arial; font-size: 20px;'>{{Extra information}}</div>
+
+<div style='font-family: Arial; font-size: 20px;'>{{Picture}}</div>
+
+<div style='font-family: Arial; font-size: 20px;'>{{Synonyms}}</div>
+
+
+
+
+
+
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.word_vi {
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Cloze_En {
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    color:#004dcf;
+}
+
+.Phonetic_symbol {
+    font-family: Arial;
+    font-size: 20px;
+    color:#795548;
+}
+
+.Audio {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+details {
+text-align: left;
+}

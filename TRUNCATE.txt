@@ -1,0 +1,7 @@
+TRUNCATE TABLE `words`;
+TRUNCATE TABLE `word_title`;
+TRUNCATE TABLE `word_sentence`;
+TRUNCATE TABLE `sentences_title`;
+TRUNCATE TABLE `sentences`;
+TRUNCATE TABLE `bookmark_topics`;
+TRUNCATE TABLE `bookmark_words`;

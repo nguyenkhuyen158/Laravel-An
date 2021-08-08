@@ -1,0 +1,43 @@
+Database
+	Tên bảng: Chữ thường, số nhiều, có dấu gạch dưới
+		VD: users, bookmark-topics
+	Tên cột: Chữ thường, có dấu gạch dưới, Không trùng tên với bảng
+		VD: word_vn, word_en
+	Khóa chính: id
+	Khóa phụ: tên bảng _ id
+		VD: user_id, word_id
+
+Controller
+	Tên controller: Có thể viết hoa, số ít, không có gạch dưới + Controller
+		VD: UserController, WordController
+
+Model
+	Tên model: Chữ đầu tiên viết hoa, số ít, không có gạch dưới
+		VD: User, Word, ForumThread
+	Thuộc tính: chữ thường, có gạch dưới
+		VD: $this->updated_at
+	Phương thức: chữ thường chữ cái đầu, không có gạch dưới
+		VD: getUser, getWords
+
+Blade_view
+	Tên blade: chữ thường, có dấu gạch dưới
+		VD: all_user.blade.php
+
+Migration
+	Tên migration:  yyyy_mm_dd_<timestamp>_create_<table name>_table
+		VD: 2019_06_06_164210_create_domains_table.php
+
+Route
+	Route: chữ thường, dấu gạch ngang
+		Route::get('/post-comment', 'UserController@active')->name('users.show_active');
+
+	Tên route: có dấu giạch dưới
+		VD: Route::get('/user', 'UserController@active')->name('users.show_active'); 
+
+
+PHP
+	Tên biến: chữ thường đầu tiên, không có dấu gạch dưới
+		VD: $articlesWithAuthor
+
+	Hằng số: Chữ hoa, có dấu gạch dưới
+		VD: DATABASE_TABLE
