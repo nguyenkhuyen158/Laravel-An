@@ -14,24 +14,30 @@ services:
       SERVICE_NAME: app
       SERVICE_TAGS: dev
     working_dir: /var/www
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
     networks:
       - app-network
 
   #Nginx Service
   webserver:
-    image: nginx:centos
+    image: nginx:alpine
     container_name: webserver
     restart: always
     tty: true
     ports:
       - "80:80"
       - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
       - app-network
 
   #MySQL Service
   db:
-    image: mysql:latest
+    image: mysql:5.7.22
     container_name: db
     restart: always
     tty: true
@@ -42,6 +48,9 @@ services:
       MYSQL_ROOT_PASSWORD: zxcvbnm
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - app-network
 
@@ -49,3 +58,7 @@ services:
 networks:
   app-network:
     driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local
